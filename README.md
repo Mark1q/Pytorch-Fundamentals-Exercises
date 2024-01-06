@@ -60,7 +60,7 @@ To fix this, we can transpose the second tensor using the `.T` attribute , which
 We can see that taking place when we check for the shape of the two matrices(the original and the transposed one) like in the last example
 
 ```python
-original shape : torch.Size([1, 7])
+Original shape : torch.Size([1, 7])
 Transposed shape : torch.Size([7, 1])
 ```
 
