@@ -103,7 +103,7 @@ mul_tensor = torch.matmul(rand_tensor,another_rand_tensor.T)
 
 If you run this code multiple times , you will see that the variables don't change , even though we have 2 "random" tensors.
 <br><br>
-That's because everytime this code gets executed the seed remains the same and so do the random variables that are influenced by this seed.(see documentation on [randomness](https://pytorch.org/docs/stable/notes/randomness.html) in pytorch)
+That's because everytime this code gets executed the seed remains the same and so do the random variables that are dependent on the seed.(see documentation on [randomness](https://pytorch.org/docs/stable/notes/randomness.html) in pytorch)
 
 
 
