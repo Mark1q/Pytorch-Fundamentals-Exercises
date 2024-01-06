@@ -18,7 +18,7 @@ Then, we will initialize a tensor with the function `torch.rand()` and specify t
 random_tensor = torch.rand(size=[7,7])
 ```
 
-You can check what shape a tensor has by using `<tensor_name>.shape`, where _<tensor_name>_ is `random_tensor` in our case
+You can check what shape a tensor has by using `<tensor_name>.shape`, where _<tensor_name>_ is **random_tensor** in our case
 
 ```python
 print(random_tensor.shape)
