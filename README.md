@@ -70,11 +70,7 @@ original shape : torch.Size([1, 7])
 transposed shape : torch.Size([7, 1])
 ```
 
-Now that we have matching dimensions, we can replace `another_random_tensor` in the 
-```python
-torch.matmul()
-```
-function with `another_random_tensor.T`
+Now that we have matching dimensions, we can replace `another_random_tensor` in the `torch.matmul()` function with `another_random_tensor.T`
 
 ```python
 multiplication_tensor = torch.matmul(random_tensor,another_random_tensor)
@@ -84,7 +80,7 @@ multiplication_tensor = torch.matmul(random_tensor,another_random_tensor)
 ```python
 torch.Size([7, 1])
 ```
-***7*** being the row number of the first matrix and ***1*** being the column number of the second matrix
+***7*** being the row number of the first matrix([7,7]) and ***1*** being the column number of the second matrix transposed([7,1])
 
 
 
