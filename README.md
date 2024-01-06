@@ -27,14 +27,6 @@ print(random_tensor.shape)
 torch.Size([7, 7])
 ```
 
-Full code snippet:
-```python
-import torch
-
-# Exercise 1
-
-random_tensor = torch.rand(size=[7,7])
-```
 
 ## Exercise 3
 > Perform a matrix multiplication on the tensor from 2 with another random tensor with shape (1, 7)
