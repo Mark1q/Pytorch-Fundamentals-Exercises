@@ -23,7 +23,6 @@ You can check what shape a tensor has by using `<tensor_name>.shape`, where _<te
 ```python
 print(random_tensor.shape)
 ```
-Output:
 ```python
 torch.Size([7, 7])
 ```
