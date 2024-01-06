@@ -27,6 +27,12 @@ print(random_tensor.shape)
 torch.Size([7, 7])
 ```
 
+All the code for this exercise:
+```python
+import torch
+random_tensor = torch.rand(size=[7,7])
+```
+
 ## Exercise 3
 > Perform a matrix multiplication on the tensor from 2 with another random tensor with shape (1, 7)
 
@@ -64,8 +70,22 @@ original shape : torch.Size([1, 7])
 transposed shape : torch.Size([7, 1])
 ```
 
-Now, let's change 
+Now that we have matching dimensions, we can replace `another_random_tensor` in the 
+```python
+torch.matmul()
+```
+function with `another_random_tensor.T`
 
+```python
+multiplication_tensor = torch.matmul(random_tensor,another_random_tensor)
+```
+
+<br> The resulting shape of the tensor is 
+```python
+torch.Size([7, 1])
+```
+<br>
+[**7**,7] x [7,**1**] = [**7**,**1**]
 
 
 
