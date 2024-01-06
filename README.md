@@ -136,7 +136,6 @@ Let's verify that the two tensors are on the gpu. To do that we can output the d
 print(random_gpu_tensor.device)
 print(another_random_gpu_tensor.device)
 ```
-<br>
 And for both of them you should see `cuda:0`
 
 
