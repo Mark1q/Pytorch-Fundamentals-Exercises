@@ -30,8 +30,10 @@ torch.Size([7, 7])
 Full code snippet:
 ```python
 import torch
+
+# Exercise 1
+
 random_tensor = torch.rand(size=[7,7])
-# print(random_tensor.shape)
 ```
 
 ## Exercise 3
