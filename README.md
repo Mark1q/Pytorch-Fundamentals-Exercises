@@ -27,4 +27,21 @@ print(random_tensor.shape)
 torch.Size([7, 7])
 ```
 
+## Exercise 3
+> Perform a matrix multiplication on the tensor from 2 with another random tensor with shape (1, 7)
+
+Let's declare another tensor with the shape (1,7) like in the last exercise
+
+```python
+another_random_tensor = torch.rand(size=[1,7])
+```
+
+To multiply 2 tensors , we'll be using `torch.matmul()` for that and declare another tensor that will store the resulting tensor
+
+```python
+multiplication_tensor = torch.matmul(random_tensor,another_random_tensor)
+```
+But when we try to run this code, we'll encounter an error message that will tell us that the 2 tensors can't be multiplied because of their shape
+```RuntimeError: mat1 and mat2 shapes cannot be multiplied (7x7 and 1x7)```
+
 
