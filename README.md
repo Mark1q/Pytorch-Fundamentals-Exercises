@@ -11,7 +11,7 @@ This repository contains Python code to solve and explain each step of the provi
 ## Exercise 2
 > Create a random tensor with shape (7, 7)
 
-First, we'll start importing the torch library(_See setup [here](https://pytorch.org/get-started/locally/)_).
+First, we'll start importing the torch library[(_See setup [here](https://pytorch.org/get-started/locally/)_)](#setup).
 ```python 
 import torch
 ```
@@ -108,7 +108,12 @@ That's because everytime this code gets executed the seed remains the same and s
 ### Exercise 5
 > Speaking of random seeds, we saw how to set it with torch.manual_seed() but is there a GPU equivalent? If there is, set the GPU random seed to 1234
 
-To check 
+To check if cuda is available on our system , we can use the following:
+
+```python
+print(torch.cuda.is_available())
+```
+If that outputs `False`, you can check your pytorch installation and see if everything is fine.(for this check the setup above)
 
 
 
