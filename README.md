@@ -105,7 +105,7 @@ If you run this code multiple times , you will see that the variables don't chan
 <br><br>
 That's because everytime this code gets executed the seed remains the same and so do the random variables that are dependent on the seed.(see documentation on [randomness](https://pytorch.org/docs/stable/notes/randomness.html) in pytorch)
 
-### Exercise 5
+## Exercise 5
 > Speaking of random seeds, we saw how to set it with torch.manual_seed() but is there a GPU equivalent? If there is, set the GPU random seed to 1234
 
 To check if cuda is available on our system , we can use the following:
@@ -113,7 +113,24 @@ To check if cuda is available on our system , we can use the following:
 ```python
 print(torch.cuda.is_available())
 ```
-If that outputs `False`, you can check your pytorch installation and see if everything is fine.(for this check the setup above)
+If that outputs `False`, you can check your pytorch installation and see if you installed the CUDA version of pytorch.(if not check the setup in the beggining).
+<br>
+If that outputs `True`, we can move on to the next step which is to set this seed to 1234. We can do that using the same `manual_seed()` function, but for CUDA.
+```python
+torch.cuda.manual_seed(1234)
+```
+## Exercise 6
+> Create two random tensors of shape (2, 3) and send them both to the GPU. Set torch.manual_seed(1234) when creating the tensors(this doesn't have to be the GPU random seed)
+
+To declare two random tensors that are on the GPU and not on the CPU(by default), we set the argument `device` equal to 'cuda' when running `torch.rand()`.
+<br>
+Because both the tensors have the same properties(shape and device), we can use the function `torch.rand_like(input=<tensor>)` to make a new tensor similar to the one provided as the `input` argument.
+
+```python
+random_gpu_tensor = torch.rand(size=[2,3],device='cuda')
+another_random_gpu_tensor = torch.rand_like(input=random_gpu_tensor)
+```
+
 
 
 
