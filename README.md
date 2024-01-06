@@ -91,7 +91,8 @@ In our case , this value is 0.
 torch.manual_seed(seed=0)
 ```
 <br>
-Now we start declaring the variables that we'll be using (don't forget about the `.T` attribute when multiplying!!
+
+Now we start declaring the variables that we'll be using (don't forget about the .T attribute when multiplying!!)
 
 ```python
 rand_tensor = torch.rand(size=[7,7])
