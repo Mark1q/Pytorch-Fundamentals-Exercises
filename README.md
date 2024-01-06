@@ -5,7 +5,10 @@ PyTorch Fundamentals Exercises from the [learnpytorch.io](learnpytorch.io)
 ## Exercise 1
 > Create a random tensor with shape (7, 7)
 
-First,we'll start importing the torch library ```python import torch```
+First,we'll start importing the torch library
+```python 
+import torch
+```
 We will initialize a tensor with the function `torch.rand()`
 
 Let's check using `random_tensor.shape`
