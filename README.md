@@ -147,7 +147,44 @@ Again, because the dimensions dont match up, we need to use the `.T` attribute
 mul_gpu_tensor = torch.matmul(random_gpu_tensor,another_random_gpu_tensor.T)
 ```
 
+## Exercise 8
+> Find the maximum and minimum values of the output of 7
 
+To find the maximum and the minimum, we use the `min()` and `max()` functions.
+
+```python
+minimum_tensor = mul_gpu_tensor.max()
+maximum_tensor = mul_gpu_tensor.min()
+```
+
+## Exercise 9
+> Find the maximum and minimum index values of the output of 7
+
+To find the positions of the maximum and minimum elements, we use the `argmin()` and `argmax()` functions.
+
+```python
+minimum_tensor_index = mul_gpu_tensor.argmin()
+maximum_tensor_index = mul_gpu_tensor.argmax()
+```
+
+## Exercise 10
+> Make a random tensor with shape (1, 1, 1, 10) and then create a new tensor with all the 1 dimensions removed to be left with a tensor of shape (10). Set the seed to 7 when you create it and print out the first tensor and it's shape as well as the second tensor and it's shape
+
+To remove dimensions and store the resized tensor we can use the function `torch.reshape(input=<input_tensor>,shape=<new_shape>)` , where `<input_tensor>` is the tensor we want to reshape, and `<new_shape>` being the new shape that we want.
+
+```python
+torch.manual_seed(7)
+
+tensor = torch.rand(size=[1,1,1,10])
+new_tensor = torch.reshape(input=tensor,shape=[2,10])
+```
+
+And we need to output the tensor and their respective shape
+
+```python
+print(tensor,tensor.shape)
+print(new_tensor,new_tensor.shape)
+```
 
 
 
