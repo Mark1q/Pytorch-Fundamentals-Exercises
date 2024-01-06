@@ -84,7 +84,7 @@ multiplication_tensor = torch.matmul(random_tensor,another_random_tensor)
 ```python
 torch.Size([7, 1])
 ```
-<br>
+
 [**7**,7] x [7,**1**] = [**7**,**1**]
 
 
