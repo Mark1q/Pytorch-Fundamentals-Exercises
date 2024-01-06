@@ -31,6 +31,7 @@ Full code snippet:
 ```python
 import torch
 random_tensor = torch.rand(size=[7,7])
+# print(random_tensor.shape)
 ```
 
 ## Exercise 3
