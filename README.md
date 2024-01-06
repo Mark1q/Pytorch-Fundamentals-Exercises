@@ -131,6 +131,10 @@ random_gpu_tensor = torch.rand(size=[2,3],device='cuda')
 another_random_gpu_tensor = torch.rand_like(input=random_gpu_tensor)
 ```
 
+Let's verify that the two tensors are on the gpu. To do that we can output the device of the tensor using the `.device` attribute : `<tensor_name>.device`
+<br><br>
+And for both of them you should see `cuda:0`
+
 
 
 
