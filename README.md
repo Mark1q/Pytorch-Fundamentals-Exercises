@@ -138,6 +138,15 @@ print(another_random_gpu_tensor.device)
 ```
 And for both of them you should see `cuda:0`
 
+## Exercise 7
+> Perform a matrix multiplication on the tensors you created in 6
+
+Again, because the dimensions dont match up, we need to use the `.T` attribute
+
+```python
+mul_gpu_tensor = torch.matmul(random_gpu_tensor,another_random_gpu_tensor.T)
+```
+
 
 
 
