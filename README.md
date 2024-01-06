@@ -90,6 +90,14 @@ In our case , this value is 0.
 ```python
 torch.manual_seed(seed=0)
 ```
+<br>
+Now we start declaring the variables that we'll be using (don't forget about the `.T` attribute when multiplying!!
+
+```python
+rand_tensor = torch.rand(size=[7,7])
+another_rand_tensor = torch.rand(size=[1,7])
+mul_tensor = torch.matmul(rand_tensor,another_rand_tensor.T)
+```
 
 
 
