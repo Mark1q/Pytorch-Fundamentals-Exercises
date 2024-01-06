@@ -84,8 +84,7 @@ multiplication_tensor = torch.matmul(random_tensor,another_random_tensor)
 ```python
 torch.Size([7, 1])
 ```
-
-[**7**,7] x [7,**1**] = [**7**,**1**]
+***7*** being the row number of the first matrix and ***1*** being the column number of the second matrix
 
 
 
