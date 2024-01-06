@@ -2,6 +2,9 @@
 
 This repository contains Python code to solve and explain each step of the provided deep learning exercises using PyTorch. The exercises cover various aspects such as creating tensors, matrix multiplication, setting random seeds, utilizing GPU, and performing operations on tensors.
 
+<br>
+(All the code is in the .py file attached to this repo)
+
 ## Exercise 1
 > **Documentation reading** - A big part of deep learning is getting familiar with the documentation of a certain framework you're using. We'll be using the PyTorch documentation a lot throughout the rest of this course. So I'd recommend spending 10-minutes reading the following. See the documentation on [torch.Tensor](https://pytorch.org/docs/stable/tensors.html#torch-tensor) and for [torch.cuda](https://pytorch.org/docs/master/notes/cuda.html#cuda-semantics)
 
@@ -76,6 +79,8 @@ multiplication_tensor = torch.matmul(random_tensor,another_random_tensor)
 torch.Size([7, 1])
 ```
 ***7*** being the row number of the first matrix([7,7]) and ***1*** being the column number of the second matrix transposed([7,1])
+
+Exercise
 
 
 
