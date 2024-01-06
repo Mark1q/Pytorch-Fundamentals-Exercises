@@ -108,7 +108,7 @@ That's because everytime this code gets executed the seed remains the same and s
 ### Exercise 5
 > Speaking of random seeds, we saw how to set it with torch.manual_seed() but is there a GPU equivalent? If there is, set the GPU random seed to 1234
 
-
+To check 
 
 
 
