@@ -123,7 +123,7 @@ torch.cuda.manual_seed(1234)
 > Create two random tensors of shape (2, 3) and send them both to the GPU. Set torch.manual_seed(1234) when creating the tensors(this doesn't have to be the GPU random seed)
 
 To declare two random tensors that are on the GPU and not on the CPU(by default), we set the argument `device` equal to 'cuda' when running `torch.rand()`.
-<br>
+<br><br>
 Because both the tensors have the same properties(shape and device), we can use the function `torch.rand_like(input=<tensor>)` to make a new tensor similar to the one provided as the `input` argument.
 
 ```python
