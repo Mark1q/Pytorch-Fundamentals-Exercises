@@ -43,7 +43,13 @@ multiplication_tensor = torch.matmul(random_tensor,another_random_tensor)
 ```
 But when we try to run this code, we'll encounter an error message that will tell us that the 2 tensors can't be multiplied because of their shape
 ```
+Traceback (most recent call last):
+  File "main.py", line 5, in <module>
+    multiplication_tensor = torch.matmul(random_tensor,another_random_tensor)
 RuntimeError: mat1 and mat2 shapes cannot be multiplied (7x7 and 1x7)
 ```
+That's because, for matrix multiplication, the two matrices 
+
+![Photo ilustrating the rule the matrix multiplication has to follow](https://d138zd1ktt9iqe.cloudfront.net/media/seo_landing_files/multiplication-of-matrices-in-linear-algebra-1627878775.png)
 
 
