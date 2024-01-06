@@ -54,7 +54,7 @@ That's because, for matrix multiplication to be possible :
 
 ![Photo ilustrating the rule the matrix multiplication has to follow](https://dmn92m25mtw4z.cloudfront.net/img_set/la-1-4-x-1-article/v1/la-1-4-x-1-article-878w.png)
 
-In our scenario, we have a tensor that has the shape [7,7] and one who has the shape [1,7]_
+In our scenario, we have a tensor that has the shape [7,7] and one who has the shape [1,7] __
 w
 
 
