@@ -83,9 +83,9 @@ torch.Size([7, 1])
 ## Exercise 4
 > Set the random seed to 0 and do exercises 2 & 3 over again
 
-To set a random seed , we use the function `torch.manual_seed(seed=<value>)` , where `<value>` is the specific value that we choose.
+To set a random seed, we use the function `torch.manual_seed(seed=<value>)` , where `<value>` is the specific value that we choose.
 <br>
-In our case , this value is 0 so we set it like this :
+In our case , this value is 0
 
 ```python
 torch.manual_seed(seed=0)
