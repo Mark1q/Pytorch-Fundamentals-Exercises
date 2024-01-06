@@ -54,8 +54,8 @@ That's because, for matrix multiplication to be possible :
 
 ![Photo ilustrating the rule the matrix multiplication has to follow](https://dmn92m25mtw4z.cloudfront.net/img_set/la-1-4-x-1-article/v1/la-1-4-x-1-article-878w.png)
 
-In our scenario, we have a tensor that has the shape [7,7] and one who has the shape [1,7] __
-w
+In our scenario, we have a tensor that has the shape [7,7] and one who has the shape [1,7]. We can see that the _number of columns(7)_ in our first tensor doesn't match the _number of rows(1)_ in our second tensor.<br>
+To fix this, we can transpose the second tensor using `another_random_tensor.T`, which swaps the columns with the rows in our tensor.
 
 
 
