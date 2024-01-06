@@ -9,7 +9,11 @@ First,we'll start importing the torch library
 ```python 
 import torch
 ```
-We will initialize a tensor with the function `torch.rand()`
+Then, we will initialize a tensor with the function 
+
+```python
+torch.rand()
+```
 
 Let's check using `random_tensor.shape`
 
