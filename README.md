@@ -52,6 +52,6 @@ RuntimeError: mat1 and mat2 shapes cannot be multiplied (7x7 and 1x7)
 That's because, for matrix multiplication, _the **number of columns** in the first matrix_ **must match** _the **number of rows** in the second matrix_, the resulting matrix having **the number of rows of the first** and **the number of columns of the second matrix**.
 
 
-![Photo ilustrating the rule the matrix multiplication has to follow](https://i.postimg.cc/63Hymmm5/download.png)
+![Photo ilustrating the rule the matrix multiplication has to follow]([https://i.postimg.cc/63Hymmm5/download.png](https://dmn92m25mtw4z.cloudfront.net/img_set/la-1-4-x-1-article/v1/la-1-4-x-1-article-878w.png)https://dmn92m25mtw4z.cloudfront.net/img_set/la-1-4-x-1-article/v1/la-1-4-x-1-article-878w.png)
 
 
